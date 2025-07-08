@@ -26,6 +26,7 @@ export async function fetchAPI(url: string, options: FetchAPIOptions) {
   try {
     const response = await fetch(url, headers);
     const contentType = response.headers.get("content-type");
+    
     if (
       contentType &&
       contentType.includes("application/json") &&

@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "reverse": {
+    "reversed": {
       "type": "boolean",
       "default": false
     },
@@ -32,7 +32,11 @@
       "enum": [
         "red",
         "green ",
-        "turquoise"
+        "turquoise",
+        "white",
+        "blue",
+        "purple",
+        "black"
       ]
     }
   },

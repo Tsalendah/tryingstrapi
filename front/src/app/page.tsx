@@ -1,21 +1,16 @@
 import { getHomePage } from './data/loaders';
 import { notFound } from 'next/navigation';
-import '../styles/global.css';
-import { HeroSection } from '@/components/hero-section';
+import { BlockRenderer } from '@/components/BlockRenderer';
 async function loader() {
   const data = await getHomePage();
   if (!data) notFound();
-  console .log(data);
+  console.log(data);
   return {...data.data}; 
 }
 
 export default async function Home() {
   const data = await loader();
+  const blocks = data?.blocks || [];
   console.log(data);
-  return (
-    <div>
-    <h1>{data.title}</h1>
-    <p>{data.deskripsi}</p>
-  </div>
-  );
+  return <BlockRenderer blocks={blocks} />;
 }

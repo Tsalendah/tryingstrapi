@@ -5,7 +5,7 @@
   align-items: center;
   padding: 2rem 4.8rem;
   z-index: 10;
-  background-color: $light-beige;
+  background-color: $grey;
 
   &--light {
     color: white;
@@ -20,12 +20,12 @@
 
   img {
     height: auto;
-    width: 5rem;
+    width: 9rem;
   }
 
   &__logo {
     height: auto;
-    width: 5rem;
+    width: 9rem;
 
     &--black {
       filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(25deg) brightness(102%) contrast(101%);

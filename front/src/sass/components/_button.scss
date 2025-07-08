@@ -31,8 +31,27 @@
     color: white;
   }
 
-  &--beige {
-    background-color: $beige;
+  &--blue {
+    background-color: blue;
+    color: white;
+  }
+
+  &--red {
+    background-color: red;
+    color: white;
+  }
+
+  &--white {
+    background-color: white;
+    color: black;
+  }
+
+  &--green {
+    background-color: green;
+    color: white;
+  }
+  &--purple {
+    background-color: purple;
     color: white;
   }
 }
