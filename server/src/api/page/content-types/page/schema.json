@@ -21,9 +21,7 @@
       "type": "dynamiczone",
       "components": [
         "blocks.info-block",
-        "blocks.hero-section",
-        "blocks.feature-section",
-        "blocks.subscribe"
+        "blocks.hero-section"
       ]
     },
     "slug": {

@@ -1,9 +1,9 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
-export interface BlocksFeatureSection extends Struct.ComponentSchema {
-  collectionName: 'components_blocks_feature_sections';
+export interface BlocksFeaturedArticle extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_featured_articles';
   info: {
-    displayName: 'Feature Section';
+    displayName: 'Featured Article';
   };
   attributes: {
     excerpt: Schema.Attribute.RichText;
@@ -108,7 +108,7 @@ export interface LayoutHeader extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'blocks.feature-section': BlocksFeatureSection;
+      'blocks.featured-article': BlocksFeaturedArticle;
       'blocks.hero-section': BlocksHeroSection;
       'blocks.info-block': BlocksInfoBlock;
       'blocks.subscribe': BlocksSubscribe;
