@@ -1,6 +1,6 @@
 import { getPageBySlug } from "@/app/data/loaders";
 import { notFound } from "next/navigation";
-import { BlockRenderer } from "@/components/BlockRenderer";
+import { BlockRenderer } from "@/components/BlockRenderer"; 
 
 async function loader(slug: string) {
   const { data } = await getPageBySlug(slug);

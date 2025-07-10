@@ -23,8 +23,7 @@ interface HeaderProps {
 
 export function Header({ data }: HeaderProps) {
   const pathname = usePathname();
-  const headerLight = pathname === "/experience";
-
+  const headerLight = pathname === "/halo";
   if (!data) return null;
 
   const { logo, navigation, cta } = data;
